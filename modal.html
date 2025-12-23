@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style_modal.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="trainer-card">
+    <div class="trainer-card__container container">
+      
+      <!-- Верхняя часть (БЕЗ СКРОЛЛА) -->
+      <div class="trainer-card__content">
+        <!-- Левая часть: фото -->
+        <div class="trainer-card__left">
+          <div class="trainer-card__image">
+            <img src="./images/image-modal.png" alt="Ирина Лайм">
+          </div>
+        </div>
+        
+        <!-- Правая часть: текст и иконки -->
+        <div class="trainer-card__right">
+          <div class="trainer-card__info">
+            <h2 class="trainer-card__name">Ирина Лайм</h2>
+            <p class="trainer-card__position">преподаватель по робототехнике</p>
+            
+            <div class="trainer-card__social">
+              <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+              </a>
+              <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Скрытые радиокнопки (ДО навигации) -->
+      <div class="tabs-control">
+        <input type="radio" id="tab-education" name="trainer-tabs" checked>
+        <input type="radio" id="tab-experience" name="trainer-tabs">
+        <input type="radio" id="tab-awards" name="trainer-tabs">
+      </div>
+      
+      <!-- НАВИГАЦИЯ (БЕЗ СКРОЛЛА) -->
+      <nav class="trainer-nav">
+        <div class="trainer-nav__list">
+          <label for="tab-education" class="trainer-nav__link trainer-nav__link--active">Обучение</label>
+          <label for="tab-experience" class="trainer-nav__link">Опыт работы</label>
+          <label for="tab-awards" class="trainer-nav__link">Награды</label>
+        </div>
+      </nav>
+
+      <!-- КОНТЕНТ РАЗДЕЛОВ (СО СКРОЛЛОМ) -->
+      <div class="trainer-content">
+        <!-- Раздел "Обучение" -->
+        <div class="trainer-section trainer-section--active" id="education-content">
+          <div class="education-item">
+            <h3 class="education-date">Сентябрь 1995 — Июнь 2000</h3>
+            <p class="education-text">
+              Санкт-Петербургский политехнический университет Петра Великого<br>
+              Факультет: Компьютерных наук и технологий<br>
+              Специальность: Математика и компьютерные науки<br>
+              Форма обучения: Очная
+            </p>
+          </div>
+          
+          <div class="education-courses">
+            <h2 class="courses-title">Курсы и тренинги</h2>
+            <div class="course-item">
+              <h3 class="course-date">Ноябрь 2020 — Февраль 2021</h3>
+              <p class="course-name">Программа дополнительного образования «3D Моделирование»</p>
+              <p class="course-place">Место проведения: Институт дополнительного образования «Политех»</p>
+              <p>Дополнительный текст для демонстрации скролла...</p>
+              <p>Дополнительный текст для демонстрации скролла...</p>
+              <p>Дополнительный текст для демонстрации скролла...</p>
+              <p>Дополнительный текст для демонстрации скролла...</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Раздел "Опыт работы" -->
+        <div class="trainer-section" id="experience-content">
+          <p class="section-text">Текст для раздела "Опыт работы"...</p>
+        </div>
+        
+        <!-- Раздел "Награды" -->
+        <div class="trainer-section" id="awards-content">
+          <p class="section-text">Текст для раздела "Награды"...</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <script src="./javascript_modal.js"></script>
+</body>
+</html>
