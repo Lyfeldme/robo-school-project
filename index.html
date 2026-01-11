@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Robo School</title>
+  </head>
+  <body>
+    <header class="header" id="top-header">
+      <div class="header__container">
+        <a class="header__logo" href="#top">ROBO.SCHOOL</a>
+        <a class="header__phone-icon" href="tel:+78000001122" aria-label="Позвонить">
+        <img src="./svg/phone-icon.svg" alt="Телефон" width="24" height="24">
+        </a>
+        <button class="burger-menu" aria-label="Открыть меню"></button>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#stats">О школе</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#team">Тренеры</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#tarif">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__contact" href="tel:+78000001122">
+        +7 800 000 11 22
+        </a>
+      </div>
+    </header>
+    <main>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">ROBO SCHOOL</h1>
+          <p class="hero__description">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+          <a class="bet-button" href="#form-section">Записаться на курс</a>
+        </div>
+        <div class="hero__image"></div>
+      </div>
+    </section>
+    <section class="stats" id="stats">
+      <h2 class="stats__title">
+        <strong>Robo School – </strong>учреждение для формирования кадрового педагогического резерва в сфере робототехники и&nbsp;программирования
+      </h2>
+      <div class="stats__list">
+        <p class="stats__item">
+          <strong class="stats__number">10</strong>
+          <span class="stats__text">УМК по различным направлениям по робототехнике</span>
+        </p>
+        <p class="stats__item">
+          <strong class="stats__number">20</strong>
+          <span class="stats__text">Школ, в которых запущена робототехника</span>
+        </p>
+        <p class="stats__item">
+          <strong class="stats__number">100</strong>
+          <span class="stats__text">Педагогов прошедших курсы повышения квалификации</span>
+        </p>
+        <p class="stats__item">
+          <strong class="stats__number">10 000</strong>
+          <span class="stats__text">Обученных детей на базе собственных центров</span>
+        </p>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info__content">
+        <h2 class="info__title">Что вы получите после курса</h2>
+        <ul class="info__benefits">
+          <li class="info__benefit">
+            <h3 class="info__benefit-title">Удостоверение</h3>
+            <p class="info__benefit-desc">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+          </li>
+          <li class="info__benefit">
+            <h3 class="info__benefit-title">Знания</h3>
+            <p class="info__benefit-desc">По основам разработки учебно-методических комплексов<br>по робототехнике и программированию</p>
+          </li>
+          <li class="info__benefit">
+            <h3 class="info__benefit-title">Практику</h3>
+            <p class="info__benefit-desc">Возможность пройти практику<br>по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+            <button class="info__hint" aria-describedby="hint-text">
+            <img class="info__icon" src="./svg/icon-info.svg" alt="Подсказка">
+            <span class="info__tooltip" id="hint-text">При наличии свободных мест</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <h2 class="team__title">Профессиональные тренеры</h2>
+      <div class="team__slider-container">
+        <div class="team__slider-wrapper">
+          <div class="team__slider">
+            <div class="team__card">
+              <img class="team__photo" src="./images/card/irina.jpg" alt="Ирина Лайм - преподаватель по робототехнике">
+              <div class="team__card-name">Ирина Лайм</div>
+              <p class="team__description">преподаватель по робототехнике</p>
+              <a class="team__link" href="#modal-irina">Подробнее</a>
+            </div>
+            <div class="team__card">
+              <img class="team__photo" src="./images/card/marina.jpg" alt="Марина Орлова - преподаватель по робототехнике">
+              <div class="team__card-name">Марина Орлова</div>
+              <p class="team__description">преподаватель по робототехнике</p>
+              <a class="team__link" href="#modal-marina">Подробнее</a>
+            </div>
+            <div class="team__card">
+              <img class="team__photo" src="./images/card/maksim.jpg" alt="Максим Петров - преподаватель по программированию">
+              <div class="team__card-name">Максим Петров</div>
+              <p class="team__description">преподаватель по программированию</p>
+              <a class="team__link" href="#modal-maksim">Подробнее</a>
+            </div>
+            <div class="team__card">
+              <img class="team__photo" src="./images/card/konstantin.jpg" alt="Константин Назаров - преподаватель по робототехнике">
+              <div class="team__card-name">Константин Назаров</div>
+              <p class="team__description">преподаватель по робототехнике</p>
+              <a class="team__link" href="#modal-konstantin">Подробнее</a>
+            </div>
+            <div class="team__card">
+              <img class="team__photo" src="./images/card/liza.jpg" alt="Лиза Весенняя - преподаватель по робототехнике">
+              <div class="team__card-name">Лиза Весенняя</div>
+              <p class="team__description">преподаватель по программированию</p>
+              <a class="team__link" href="#modal-liza">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="team__controls">
+          <div class="team__scrollbar">
+            <div class="team__scrollbar-track">
+              <div class="team__scrollbar-thumb"></div>
+            </div>
+          </div>
+          <div class="team__arrows">
+            <button class="team__arrow team__arrow--prev" aria-label="Предыдущий слайд">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="#141024" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="team__arrow team__arrow--next" aria-label="Следующий слайд">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18L15 12L9 6" stroke="#141024" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="modal-irina">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button type="button" class="modal__close">Закрыть</button>
+          <section class="trainer-card">
+            <div class="trainer-card__container container">
+              <div class="trainer-card__content">
+                <div class="trainer-card__left">
+                  <div class="trainer-card__image">
+                    <img src="./images/modal/image-modal-irina.png" alt="Ирина Лайм">
+                  </div>
+                </div>
+                <div class="trainer-card__right">
+                  <div class="trainer-card__info">
+                    <h2 class="trainer-card__name">Ирина Лайм</h2>
+                    <p class="trainer-card__position">преподаватель по робототехнике</p>
+                    <div class="trainer-card__social">
+                      <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                      <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+                      </a>
+                      <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                      <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-control">
+                <input type="radio" id="irina-tab-education" name="trainer-tabs-irina" checked>
+                <input type="radio" id="irina-tab-experience" name="trainer-tabs-irina">
+                <input type="radio" id="irina-tab-awards" name="trainer-tabs-irina">
+              </div>
+              <nav class="trainer-nav">
+                <div class="trainer-nav__list">
+                  <label for="irina-tab-education" class="trainer-nav__link trainer-nav__link--active">Образование</label>
+                  <label for="irina-tab-experience" class="trainer-nav__link">Опыт работы</label>
+                  <label for="irina-tab-awards" class="trainer-nav__link">Награды</label>
+                </div>
+              </nav>
+              <div class="trainer-content-wrapper">
+                <div class="trainer-scroll-container">
+                  <div class="trainer-scroll-content">
+                    <div class="trainer-section trainer-section--active" id="irina-education-content">
+                      <div class="education-item">
+                        <h3 class="education-date">Сентябрь 1995 — Июнь 2000</h3>
+                        <p class="education-text">
+                          Санкт-Петербургский политехнический университет Петра Великого<br>
+                          Факультет: Компьютерных наук и технологий<br>
+                          Специальность: Математика и компьютерные науки<br>
+                          Форма обучения: Очная
+                        </p>
+                      </div>
+                      <div class="education-courses">
+                        <h2 class="courses-title">Курсы и тренинги</h2>
+                        <div class="course-item">
+                          <h3 class="course-date">Ноябрь 2020 — Февраль 2021</h3>
+                          <p class="course-name">Программа дополнительного образования «3D Моделирование»</p>
+                          <p class="course-place">Место проведения: Институт дополнительного образования «Политех»</p>
+                          <p>Специализированный курс по 3D-моделированию для образовательных целей, включая создание моделей для 3D-печати и визуализации в робототехнических проектах.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="irina-experience-content">
+                      <div class="experience-item">
+                        <h3 class="experience-date">Сентябрь 2000 — Июль 2010</h3>
+                        <p class="experience-text">
+                          <strong>Преподаватель математики и информатики</strong><br>
+                          Гимназия № 56, Санкт-Петербург. Ведение кружков по робототехнике, подготовка учеников к олимпиадам.
+                        </p>
+                      </div>
+                      <div class="experience-item">
+                        <h3 class="experience-date">Август 2010 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Ведущий методист и преподаватель в ROBO.SCHOOL</strong><br>
+                          Разработка учебных программ по робототехнике для начальной школы, проведение мастер-классов для педагогов.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="irina-awards-content">
+                      <div class="award-item">
+                        <h3 class="award-date">2018</h3>
+                        <p class="award-text">
+                          <strong>Заслуженный учитель Российской Федерации</strong><br>
+                          Награда за вклад в развитие образовательной робототехники и подготовку педагогических кадров.
+                        </p>
+                      </div>
+                      <div class="award-item">
+                        <h3 class="award-date">2015</h3>
+                        <p class="award-text">
+                          <strong>Победитель конкурса «Учитель года» в номинации «Инновационные технологии»</strong><br>
+                          Разработала уникальную методику преподавания робототехники детям младшего школьного возраста.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-scrollbar">
+                    <div class="custom-scroll-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-marina">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button type="button" class="modal__close">Закрыть</button>
+          <section class="trainer-card">
+            <div class="trainer-card__container container">
+              <div class="trainer-card__content">
+                <div class="trainer-card__left">
+                  <div class="trainer-card__image">
+                    <img src="./images/modal/image-modal-marina.png" alt="Марина Орлова">
+                  </div>
+                </div>
+                <div class="trainer-card__right">
+                  <div class="trainer-card__info">
+                    <h2 class="trainer-card__name">Марина Орлова</h2>
+                    <p class="trainer-card__position">преподаватель по робототехнике</p>
+                    <div class="trainer-card__social">
+                      <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                      <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+                      </a>
+                      <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                      <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-control">
+                <input type="radio" id="marina-tab-education" name="trainer-tabs-marina" checked>
+                <input type="radio" id="marina-tab-experience" name="trainer-tabs-marina">
+                <input type="radio" id="marina-tab-awards" name="trainer-tabs-marina">
+              </div>
+              <nav class="trainer-nav">
+                <div class="trainer-nav__list">
+                  <label for="marina-tab-education" class="trainer-nav__link trainer-nav__link--active">Образование</label>
+                  <label for="marina-tab-experience" class="trainer-nav__link">Опыт работы</label>
+                  <label for="marina-tab-awards" class="trainer-nav__link">Награды</label>
+                </div>
+              </nav>
+              <div class="trainer-content-wrapper">
+                <div class="trainer-scroll-container">
+                  <div class="trainer-scroll-content">
+                    <div class="trainer-section trainer-section--active" id="marina-education-content">
+                      <div class="education-item">
+                        <h3 class="education-date">Сентябрь 2005 — Июнь 2010</h3>
+                        <p class="education-text">
+                          Московский государственный технический университет им. Н.Э. Баумана<br>
+                          Факультет: Специального машиностроения<br>
+                          Специальность: Роботы и робототехнические системы<br>
+                          Форма обучения: Очная
+                        </p>
+                      </div>
+                      <div class="education-courses">
+                        <h2 class="courses-title">Курсы и тренинги</h2>
+                        <div class="course-item">
+                          <h3 class="course-date">Март 2018 — Июнь 2018</h3>
+                          <p class="course-name">Курс «Образовательная робототехника Lego Education»</p>
+                          <p class="course-place">Место проведения: Центр педагогического мастерства, Москва</p>
+                          <p>Углубленное изучение методик преподавания робототехники с использованием конструкторов Lego Mindstorms и Lego WeDo.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="marina-experience-content">
+                      <div class="experience-item">
+                        <h3 class="experience-date">Сентябрь 2010 — Декабрь 2015</h3>
+                        <p class="experience-text">
+                          <strong>Инженер-конструктор в НПО «Андроидная техника»</strong><br>
+                          Участие в разработке антропоморфных роботов для образовательных и исследовательских целей.
+                        </p>
+                      </div>
+                      <div class="experience-item">
+                        <h3 class="experience-date">Январь 2016 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Преподаватель и методист в ROBO.SCHOOL</strong><br>
+                          Разработка практических занятий по робототехнике, проведение курсов повышения квалификации для учителей.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="marina-awards-content">
+                      <div class="award-item">
+                        <h3 class="award-date">2020</h3>
+                        <p class="award-text">
+                          <strong>Лучший преподаватель робототехники по версии EdCrunch Award</strong><br>
+                          Награда за инновационные подходы в преподавании технических дисциплин.
+                        </p>
+                      </div>
+                      <div class="award-item">
+                        <h3 class="award-date">2019</h3>
+                        <p class="award-text">
+                          <strong>Автор лучшего учебно-методического комплекса по робототехнике</strong><br>
+                          Награда от Министерства просвещения за создание УМК для начальной школы.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-scrollbar">
+                    <div class="custom-scroll-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-maksim">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button type="button" class="modal__close">Закрыть</button>
+          <section class="trainer-card">
+            <div class="trainer-card__container container">
+              <div class="trainer-card__content">
+                <div class="trainer-card__left">
+                  <div class="trainer-card__image">
+                    <img src="./images/card/maksim.jpg" alt="Максим Петров">
+                  </div>
+                </div>
+                <div class="trainer-card__right">
+                  <div class="trainer-card__info">
+                    <h2 class="trainer-card__name">Максим Петров</h2>
+                    <p class="trainer-card__position">преподаватель по программированию</p>
+                    <div class="trainer-card__social">
+                      <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                      <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+                      </a>
+                      <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                      <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-control">
+                <input type="radio" id="maksim-tab-education" name="trainer-tabs-maksim" checked>
+                <input type="radio" id="maksim-tab-experience" name="trainer-tabs-maksim">
+                <input type="radio" id="maksim-tab-awards" name="trainer-tabs-maksim">
+              </div>
+              <nav class="trainer-nav">
+                <div class="trainer-nav__list">
+                  <label for="maksim-tab-education" class="trainer-nav__link trainer-nav__link--active">Образование</label>
+                  <label for="maksim-tab-experience" class="trainer-nav__link">Опыт работы</label>
+                  <label for="maksim-tab-awards" class="trainer-nav__link">Награды</label>
+                </div>
+              </nav>
+              <div class="trainer-content-wrapper">
+                <div class="trainer-scroll-container">
+                  <div class="trainer-scroll-content">
+                    <div class="trainer-section trainer-section--active" id="maksim-education-content">
+                      <div class="education-item">
+                        <h3 class="education-date">Сентябрь 2010 — Июнь 2015</h3>
+                        <p class="education-text">
+                          Московский государственный университет им. М.В. Ломоносова<br>
+                          Факультет: Вычислительной математики и кибернетики<br>
+                          Специальность: Прикладная математика и информатика<br>
+                          Форма обучения: Очная
+                        </p>
+                      </div>
+                      <div class="education-courses">
+                        <h2 class="courses-title">Курсы и тренинги</h2>
+                        <div class="course-item">
+                          <h3 class="course-date">Март 2020 — Июнь 2020</h3>
+                          <p class="course-name">Курс «Машинное обучение и Python»</p>
+                          <p class="course-place">Место проведения: Яндекс.Практикум</p>
+                          <p>Углубленный курс по машинному обучению, включающий работу с нейросетями, анализ данных и создание моделей для реальных задач.</p>
+                        </div>
+                        <div class="course-item">
+                          <h3 class="course-date">Сентябрь 2021 — Декабрь 2021</h3>
+                          <p class="course-name">Программа «Fullstack разработка»</p>
+                          <p class="course-place">Место проведения: HTML Academy</p>
+                          <p>Комплексное обучение веб-разработке, включая фронтенд (HTML, CSS, JavaScript) и бэкенд (Node.js, Express, MongoDB).</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="maksim-experience-content">
+                      <div class="experience-item">
+                        <h3 class="experience-date">Июль 2015 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Старший разработчик в Яндекс</strong><br>
+                          Разработка и поддержка образовательных платформ, создание интерактивных курсов по программированию для школьников и студентов.
+                        </p>
+                      </div>
+                      <div class="experience-item">
+                        <h3 class="experience-date">Сентябрь 2018 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Преподаватель в ROBO.SCHOOL</strong><br>
+                          Разработка учебных программ по программированию для детей, проведение мастер-классов и хакатонов, подготовка учеников к олимпиадам.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="maksim-awards-content">
+                      <div class="award-item">
+                        <h3 class="award-date">2022</h3>
+                        <p class="award-text">
+                          <strong>Победитель хакатона «EdTech Solutions»</strong><br>
+                          Разработал интерактивную платформу для обучения детей основам алгоритмического мышления.
+                        </p>
+                      </div>
+                      <div class="award-item">
+                        <h3 class="award-date">2020</h3>
+                        <p class="award-text">
+                          <strong>Лучший преподаватель года по программированию</strong><br>
+                          Награда от Ассоциации IT-образования за инновационный подход к обучению детей.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-scrollbar">
+                    <div class="custom-scroll-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-konstantin">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button type="button" class="modal__close">Закрыть</button>
+          <section class="trainer-card">
+            <div class="trainer-card__container container">
+              <div class="trainer-card__content">
+                <div class="trainer-card__left">
+                  <div class="trainer-card__image">
+                    <img src="./images/card/konstantin.jpg" alt="Константин Назаров">
+                  </div>
+                </div>
+                <div class="trainer-card__right">
+                  <div class="trainer-card__info">
+                    <h2 class="trainer-card__name">Константин Назаров</h2>
+                    <p class="trainer-card__position">преподаватель по робототехнике</p>
+                    <div class="trainer-card__social">
+                      <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                      <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+                      </a>
+                      <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                      <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-control">
+                <input type="radio" id="konstantin-tab-education" name="trainer-tabs-konstantin" checked>
+                <input type="radio" id="konstantin-tab-experience" name="trainer-tabs-konstantin">
+                <input type="radio" id="konstantin-tab-awards" name="trainer-tabs-konstantin">
+              </div>
+              <nav class="trainer-nav">
+                <div class="trainer-nav__list">
+                  <label for="konstantin-tab-education" class="trainer-nav__link trainer-nav__link--active">Образование</label>
+                  <label for="konstantin-tab-experience" class="trainer-nav__link">Опыт работы</label>
+                  <label for="konstantin-tab-awards" class="trainer-nav__link">Награды</label>
+                </div>
+              </nav>
+              <div class="trainer-content-wrapper">
+                <div class="trainer-scroll-container">
+                  <div class="trainer-scroll-content">
+                    <div class="trainer-section trainer-section--active" id="konstantin-education-content">
+                      <div class="education-item">
+                        <h3 class="education-date">Сентябрь 2008 — Июнь 2013</h3>
+                        <p class="education-text">
+                          Санкт-Петербургский государственный университет аэрокосмического приборостроения<br>
+                          Факультет: Радиотехники и телекоммуникаций<br>
+                          Специальность: Робототехнические системы и комплексы<br>
+                          Форма обучения: Очная
+                        </p>
+                      </div>
+                      <div class="education-courses">
+                        <h2 class="courses-title">Курсы и тренинги</h2>
+                        <div class="course-item">
+                          <h3 class="course-date">Январь 2019 — Апрель 2019</h3>
+                          <p class="course-name">Программа «Промышленная робототехника»</p>
+                          <p class="course-place">Место проведения: Центр робототехники «Сколково»</p>
+                          <p>Обучение проектированию и программированию промышленных роботов, изучение систем автоматизации производства.</p>
+                        </div>
+                        <div class="course-item">
+                          <h3 class="course-date">Октябрь 2020 — Декабрь 2020</h3>
+                          <p class="course-name">Семинар «Образовательная робототехника в школе»</p>
+                          <p class="course-place">Место проведения: Московский педагогический государственный университет</p>
+                          <p>Методические основы преподавания робототехники детям, разработка учебных материалов и проектов.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="konstantin-experience-content">
+                      <div class="experience-item">
+                        <h3 class="experience-date">Август 2013 — Май 2017</h3>
+                        <p class="experience-text">
+                          <strong>Инженер-робототехник в компании «Роботикс»</strong><br>
+                          Разработка и тестирование мобильных роботов для образовательных учреждений, участие в создании робототехнических наборов.
+                        </p>
+                      </div>
+                      <div class="experience-item">
+                        <h3 class="experience-date">Июнь 2017 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Ведущий преподаватель в ROBO.SCHOOL</strong><br>
+                          Разработка учебных программ по робототехнике, подготовка учеников к соревнованиям, проведение мастер-классов по сборке и программированию роботов.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="konstantin-awards-content">
+                      <div class="award-item">
+                        <h3 class="award-date">2021</h3>
+                        <p class="award-text">
+                          <strong>Гран-при Всероссийской олимпиады по робототехнике (тренер)</strong><br>
+                          Подготовил команду-победителя в номинации «Инновационные решения в образовательной робототехнике».
+                        </p>
+                      </div>
+                      <div class="award-item">
+                        <h3 class="award-date">2019</h3>
+                        <p class="award-text">
+                          <strong>Лучший проект года «Робот-помощник для школьников»</strong><br>
+                          Разработал прототип робота, помогающего детям с ограниченными возможностями в учебном процессе.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-scrollbar">
+                    <div class="custom-scroll-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-liza">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button type="button" class="modal__close">Закрыть</button>
+          <section class="trainer-card">
+            <div class="trainer-card__container container">
+              <div class="trainer-card__content">
+                <div class="trainer-card__left">
+                  <div class="trainer-card__image">
+                    <img src="./images/card/liza.jpg" alt="Лиза Весенняя">
+                  </div>
+                </div>
+                <div class="trainer-card__right">
+                  <div class="trainer-card__info">
+                    <h2 class="trainer-card__name">Лиза Весенняя</h2>
+                    <p class="trainer-card__position">преподаватель по программированию</p>
+                    <div class="trainer-card__social">
+                      <a href="https://facebook.com" class="trainer-card__link" target="_blank" aria-label="Facebook">
+                      <img src="./svg/fb.svg" alt="Facebook" width="30" height="30">
+                      </a>
+                      <a href="https://instagram.com" class="trainer-card__link" target="_blank" aria-label="Instagram">
+                      <img src="./svg/ig.svg" alt="Instagram" width="30" height="30">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-control">
+                <input type="radio" id="liza-tab-education" name="trainer-tabs-liza" checked>
+                <input type="radio" id="liza-tab-experience" name="trainer-tabs-liza">
+                <input type="radio" id="liza-tab-awards" name="trainer-tabs-liza">
+              </div>
+              <nav class="trainer-nav">
+                <div class="trainer-nav__list">
+                  <label for="liza-tab-education" class="trainer-nav__link trainer-nav__link--active">Образование</label>
+                  <label for="liza-tab-experience" class="trainer-nav__link">Опыт работы</label>
+                  <label for="liza-tab-awards" class="trainer-nav__link">Награды</label>
+                </div>
+              </nav>
+              <div class="trainer-content-wrapper">
+                <div class="trainer-scroll-container">
+                  <div class="trainer-scroll-content">
+                    <div class="trainer-section trainer-section--active" id="liza-education-content">
+                      <div class="education-item">
+                        <h3 class="education-date">Сентябрь 2014 — Июнь 2019</h3>
+                        <p class="education-text">
+                          Национальный исследовательский университет «Высшая школа экономики»<br>
+                          Факультет: Компьютерных наук<br>
+                          Специальность: Программная инженерия<br>
+                          Форма обучения: Очная
+                        </p>
+                      </div>
+                      <div class="education-courses">
+                        <h2 class="courses-title">Курсы и тренинги</h2>
+                        <div class="course-item">
+                          <h3 class="course-date">Февраль 2020 — Май 2020</h3>
+                          <p class="course-name">Курс «Game Development для детей»</p>
+                          <p class="course-place">Место проведения: Академия игровой разработки</p>
+                          <p>Обучение созданию игр на Scratch и Python для детей 8-14 лет, методика преподавания игровой разработки.</p>
+                        </div>
+                        <div class="course-item">
+                          <h3 class="course-date">Сентябрь 2021 — Ноябрь 2021</h3>
+                          <p class="course-name">Программа «Инклюзивное программирование»</p>
+                          <p class="course-place">Место проведения: Фонд поддержки детей с особенностями развития</p>
+                          <p>Методики адаптации учебных материалов по программированию для детей с различными образовательными потребностями.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="liza-experience-content">
+                      <div class="experience-item">
+                        <h3 class="experience-date">Июль 2019 — Декабрь 2020</h3>
+                        <p class="experience-text">
+                          <strong>Frontend-разработчик в компании «Кодология»</strong><br>
+                          Разработка образовательных веб-приложений для детей, создание интерактивных тренажеров по программированию.
+                        </p>
+                      </div>
+                      <div class="experience-item">
+                        <h3 class="experience-date">Январь 2021 — настоящее время</h3>
+                        <p class="experience-text">
+                          <strong>Преподаватель в ROBO.SCHOOL</strong><br>
+                          Разработка и проведение курсов по программированию для детей, создание игровых методик обучения, подготовка младших школьников к олимпиадам по информатике.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trainer-section" id="liza-awards-content">
+                      <div class="award-item">
+                        <h3 class="award-date">2022</h3>
+                        <p class="award-text">
+                          <strong>Лучшая методическая разработка «Программирование через игру»</strong><br>
+                          Награда от Министерства просвещения за инновационный подход к обучению детей программированию.
+                        </p>
+                      </div>
+                      <div class="award-item">
+                        <h3 class="award-date">2021</h3>
+                        <p class="award-text">
+                          <strong>Победитель конкурса «Учитель цифрового века»</strong><br>
+                          Разработала серию интерактивных уроков по программированию для начальной школы, которые используются в 50+ школах страны.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-scrollbar">
+                    <div class="custom-scroll-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <section class="tarif" id="tarif">
+      <h2 class="tarif__title">Выберите нужный пакет</h2>
+      <div class="tarif__container">
+        <div class="tarif__card tarif__card--pro">
+          <h3 class="tarif__name">– PRO –</h3>
+          <div class="tarif__price">20.000 <span class="rouble">₽</span></div>
+          <p class="tarif__description">
+            <span class="tarif__line">УМК по робототехнике</span>
+            <span class="tarif__line">и программированию</span>
+          </p>
+          <button class="tarif__button">Оставить заявку</button>
+        </div>
+        <div class="tarif__card tarif__card--standard">
+          <h3 class="tarif__name">– ROBO –</h3>
+          <div class="tarif__price">15.000 <span class="rouble">₽</span></div>
+          <p class="tarif__description">УМК по робототехнике</p>
+          <button class="tarif__button">Оставить заявку</button>
+        </div>
+        <div class="tarif__card tarif__card--basic">
+          <h3 class="tarif__name">– PROG –</h3>
+          <div class="tarif__price">10.000 <span class="rouble">₽</span></div>
+          <p class="tarif__description">УМК по программированию</p>
+          <button class="tarif__button">Оставить заявку</button>
+        </div>
+      </div>
+    </section>
+    <section class="form" id="form-section">
+      <div class="form__container">
+        <div class="form__content">
+          <h2 class="form__title">Запишитесь на курс<br>со скидкой 10%</h2>
+          <p class="form__description">Акция действительна до 10 марта 2022 года</p>
+        </div>
+        <div class="form__wrapper">
+          <form class="form__name" action="#" method="POST" novalidate>
+            <div class="form__field">
+              <input class="form__input" 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Имя" 
+                minlength="2"
+                maxlength="50"
+                pattern="[А-Яа-яA-Za-z\s]+"
+                title="Только буквы и пробелы"
+                required>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+            <div class="form__field">
+              <input class="form__input" 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="Телефон" 
+                required>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+            <div class="form__field">
+              <input class="form__input" 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="E-mail"
+                title="Введите корректный email">
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+            <button class="form__button" type="submit">Оформить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a class="footer__logo" href="#top">ROBO.SCHOOL</a>
+          <a class="footer__contact" href="tel:+78000001122">+7 800 000 11 22</a>
+        </div>
+        <a class="footer__copyright" href="https://www.figma.com/design/bSxMNm0CRXFcHQzke8C8W5/ROBO-SCHOOL?m=auto&t=rg2w8vvSG7R0tNJm-6">
+          <p>© ROBO.SCHOOL</p>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="./styles/javascript.js"></script>
+</html>
