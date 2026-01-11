@@ -1232,6 +1232,14 @@ html {
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
+<<<<<<< HEAD
+=======
+  text-decoration: none;
+}
+
+.footer__copyright:hover {
+  color: #d52027;
+>>>>>>> master
 }
 
 @media (max-width: 1440px) {
